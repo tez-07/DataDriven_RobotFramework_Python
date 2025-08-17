@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.10.9 on win32)" generated="2025-08-17T14:15:22.135793" rpa="false" schemaversion="5">
+<suite id="s1" name="DDT2 Excel" source="C:\Users\tezgo\PycharmProjects\DataDrivenRobotFramework\TestCases\DDT2_Excel.robot">
+<kw name="Open MyBrowser" owner="login_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-17T14:15:22.518996" level="INFO">Opening browser 'chrome' to base url 'https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-17T14:15:22.518996" elapsed="2.135188"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-08-17T14:15:24.655187" elapsed="0.192992"/>
+</kw>
+<status status="PASS" start="2025-08-17T14:15:22.517997" elapsed="2.331186"/>
+</kw>
+<test id="s1-t1" name="LoginTestWithExcel using" line="11">
+<status status="FAIL" start="2025-08-17T14:15:24.849183" elapsed="0.001996">Test cannot be empty.</status>
+</test>
+<kw name="Close Browser" owner="login_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-08-17T14:15:24.854181" elapsed="2.225474"/>
+</kw>
+<status status="PASS" start="2025-08-17T14:15:24.854181" elapsed="2.226339"/>
+</kw>
+<status status="FAIL" start="2025-08-17T14:15:22.137793" elapsed="4.942727"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="DDT2 Excel" id="s1" pass="0" fail="1" skip="0">DDT2 Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-08-17T14:15:22.514996" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\tezgo\PycharmProjects\DataDrivenRobotFramework\TestCases\DDT2_Excel.robot", line 0</msg>
+<msg time="2025-08-17T14:15:22.514996" level="ERROR">In source file:
+  File "C:\Users\tezgo\PycharmProjects\DataDrivenRobotFramework\TestCases\..\TestData\LoginData.csv", line 0</msg>
+<msg time="2025-08-17T14:15:22.516966" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>
